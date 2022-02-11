@@ -20,7 +20,7 @@ def main(cfg):
 
     model = EncoderModel.load(cfg.ETC.output_dir2)
 
-    sentences = pd.read_csv("/workspace/TFTrainer/data/git_category_initial.csv")
+    sentences = pd.read_csv("./data/category_initial.csv")
     for sentence in sentences["content"][10:27]:
         data = tokenizer(
             sentence,
