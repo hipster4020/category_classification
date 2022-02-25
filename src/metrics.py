@@ -5,7 +5,6 @@ import tensorflow as tf
 import tensorflow_addons as tfa
 
 
-
 class CustomF1Score(tfa.metrics.F1Score):
     __name__ = "CustomF1Score"
 

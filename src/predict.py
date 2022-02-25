@@ -30,7 +30,6 @@ def main(cfg):
             return_tensors="np",
         )
 
-        # 9, 23, 24
         labels = [
             "인공지능",
             "로봇",
@@ -68,7 +67,8 @@ def main(cfg):
         result = {}
         
         for (key, l), p in zip(enumerate(labels), pred.numpy()):
-            result[str(key) + " " + str(l)] = format(p, ".4f")
+            if p >= 0.8:
+                result[str(key) + " " + str(l)] = format(p, ".4f")
         sorted_result = dict(
             sorted(result.items(), key=lambda item: item[1], reverse=True)
         )
