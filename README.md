@@ -10,6 +10,10 @@ Transformers Encoder based model
 <br>
 <br>
 
+## 👉🏻 marco f1score
+<img width="1007" alt="2" src="https://user-images.githubusercontent.com/26425581/181576667-2a09b351-a9c1-48e7-bceb-1d57400b3f14.png">
+
+
 ## 👉🏻 tree
  * [tree-md]
  * [src]
